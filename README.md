@@ -16,7 +16,7 @@ xray panel that supports multi-protocol and multi-user
 
 # Install & Upgrade
 
-```
+```bash
 bash <(curl -Ls https://github.com/mehrdad-drpc/x-ui/blob/main/install.sh)
 ```
 
