@@ -5,7 +5,7 @@ green='\033[0;32m'
 yellow='\033[0;33m'
 plain='\033[0m'
 
-cur_dir=$(pwd)
+cur_dir=$(PWD)
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}mistake${plain} must-use root User runs this script\n" && exit 1
