@@ -92,53 +92,10 @@ Precautions:
 - The certificate installation directory is the /root/cert directory
 - The certificates applied for by this script are all wild domain name certificates
 
-## Tg robot use (under development, temporarily unavailable)
 
-> This function and tutorial are provided by [FranzKafkaYu](https://github.com/FranzKafkaYu)
-
-X-UI supports daily traffic notification, panel login reminder and other functions through Tg robot. To use Tg robot, you need to apply for it yourself
-For specific application tutorials, please refer to [blog link] (https://coderfan.net/how-to-use-telegram-bot-to-alarm-you-when-someone-login-into-your-vps.html)
-Instructions for use: Set robot-related parameters in the background of the panel, including
-
-- Tg Robot Token
-- Tg Bot ChatId
-- Tg robot cycle running time, using crontab syntax
-
-Reference syntax:
-- 30 * * * * * //Notify on the 30th of every minute
-- @hourly // hourly notification
-- @daily //Notification every day (0:00 AM)
-- @every 8h // notify every 8 hours
-
-TG notification content:
-- Node traffic usage
-- Panel login reminder
-- Node expiration reminder
-- Traffic warning reminder
-
-More functions are planned...
-## Suggestion system
-
-- CentOS 7+
-- Ubuntu 16+
-- Debian 8+
-
-# common problem
 
 ## Migrating from v2-ui
-
-First install the latest version of x-ui on the server where v2-ui is installed, and then use the following command to migrate, which will migrate `all inbound account data` of v2-ui of this machine to x-ui, `panel settings and username and password will not migrate`
-
-> After the migration is successful, please `close v2-ui` and `restart x-ui`, otherwise the inbound of v2-ui and the inbound of x-ui will produce a `port conflict`
 
 ```
 x-ui v2-ui
 ```
-
-## issue closed
-
-All kinds of white problems see high blood pressure
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/vaxilu/x-ui.svg)](https://starchart.cc/vaxilu/x-ui)
